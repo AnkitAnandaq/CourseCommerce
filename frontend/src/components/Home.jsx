@@ -160,7 +160,6 @@ const Home = () => {
         <section className="p-10">
           <Slider className="" {...settings}>
             {courses.map((course) => (
-              
               <div key={course._id} className="p-4">
                 <div className="relative flex-shrink-0 w-92 transition-transform duration-300 transform hover:scale-105">
                   <div className="bg-gray-900 rounded-lg overflow-hidden">
@@ -227,12 +226,24 @@ const Home = () => {
               {/* Connects */}
               <div className="flex flex-col items-center">
                 <h3 className="text-lg font-semibold mb-4">Connects</h3>
-                <ul className="space-y-2 text-gray-400 text-center">
+                <ul className="space-y-2 text-gray-400 text-center font-mono">
                   <li className="hover:text-white cursor-pointer duration-300">
-                    Github
+                    <a
+                      href="https://github.com/AnkitAnandaq"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Github
+                    </a>
                   </li>
                   <li className="hover:text-white cursor-pointer duration-300">
-                    Linkedin
+                    <a
+                      href="https://www.linkedin.com/feed/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Linkedin
+                    </a>
                   </li>
                 </ul>
               </div>
